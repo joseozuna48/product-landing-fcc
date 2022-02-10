@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap");
+
+*{
+  margin:0px;
+  padding:0px;
+  box-sizing:border-box;
+  
+}
+
+#body {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "content"
+    "footer";
+  font-family: "Roboto", sans-serif;
+  background-color: #f5f5f0;
+  
+}
+
+ul {
+  list-style-type: none;
+  margin: 5px;
+  padding: 5px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Nav-Bar styles */
+li {
+  list-style: none;
+}
+
+.nav-link {
+  color: black;
+  text-decoration: none;
+}
+
+#header {
+  grid-area: header;
+  display: flex;
+  background-color: #f5f5f0;
+  align-items: center;
+  position: fixed;
+  justify-content:space-between;
+  width: 100%;
+}
+
+#header-img {
+  width: 50px;
+  height: 50px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+}
+
+nav ul li{
+  margin:5px;
+  height:100%;
+}
+
+/* end navbar styles */
+
+#content {
+  grid-area: content;
+  display: flex;
+  flex-direction: column;
+}
+
+#footer {
+  grid-area: footer;
+}
+
+
+
+
+
+
+/*End nav bar section   */
+
+/* Email sections styles */
+#email-section {
+  margin:auto;
+  max-width:90%;
+  text-align: center;
+  padding: 60px;
+}
+
+input[type=email]{
+  padding:5px;
+  width:50%;
+  margin-right:5px;
+}
+
+input[type=submit]{
+  padding:5px;
+}
+
+/* end email styles */
+
+.feature-img {
+  height: 20vh;
+  padding: 15px;
+}
+
+#features {
+  display: flex;
+  flex-direction: column;
+  margin:auto;
+  max-width:90%;
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  align-items: center;
+  max-width:90%;
+}
+
+/* videos styles */
+#how-it-works {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  margin:20px;
+}
+
+/* end video styles */
+
+#pricing {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.pricing-item {
+  text-align: center;
+  border: 1px solid black;
+  padding: 15px;
+  width:200px;
+  margin: 20px;
+}
+
+@media(max-width:650px){
+  #pricing{
+    flex-direction:column;
+  }
+  
+  #header{
+    justify-content:center;
+    
+  }
+  
+  .logo{
+    flex-grow:0;
+  }
+  
+  #pricing{
+    flex-direction:column;
+  }
+  
+  .pricing-item{
+    margin:auto;
+  }
+  
+}
