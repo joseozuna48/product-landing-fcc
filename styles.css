@@ -52,6 +52,7 @@ li {
 #header-img {
   width: 50px;
   height: 50px;
+  margin-left: 10px;
 }
 
 nav ul {
@@ -77,10 +78,6 @@ nav ul li{
 }
 
 
-
-
-
-
 /*End nav bar section   */
 
 /* Email sections styles */
@@ -104,7 +101,7 @@ input[type=submit]{
 /* end email styles */
 
 .feature-img {
-  height: 20vh;
+  width: 5em;
   padding: 15px;
 }
 
@@ -148,13 +145,13 @@ input[type=submit]{
   margin: 20px;
 }
 
-@media(max-width:650px){
+@media(max-width:720px){
   #pricing{
     flex-direction:column;
   }
   
   #header{
-    justify-content:center;
+    justify-content:space-between;
     
   }
   
@@ -168,6 +165,7 @@ input[type=submit]{
   
   .pricing-item{
     margin:auto;
+    margin-bottom: 10px;
   }
   
 }
